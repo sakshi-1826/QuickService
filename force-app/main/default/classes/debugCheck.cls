@@ -4,7 +4,8 @@ public with sharing class debugCheck {
         String name='Doly';
         System.debug('hELLO..' +msg +name);
         // System.debug('hELLO.. Dolyyyyyy....' );
-        System.debug('check....');
+        System.debug('check.... 1');
+        System.debug('check.... 2' );
 
     }
 }
