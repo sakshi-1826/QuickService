@@ -7,6 +7,7 @@ public with sharing class debugCheck {
         System.debug('check.... 1');
         System.debug('check.... 2' );
         System.debug('check.... 3' );
+        System.debug('check.... 4' );
 
     }
 }
