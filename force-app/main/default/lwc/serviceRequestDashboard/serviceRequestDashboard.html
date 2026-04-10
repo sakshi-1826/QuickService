@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Service Request Dashboard" class="custom-card">
+
+        <!-- Stats -->
+        <div class="slds-grid slds-gutters slds-p-around_medium stats-container">
+        
+            <div class="slds-col stat-box total">
+                <p class="label">Total</p>
+                <p class="value">{total}</p>
+            </div>
+        
+       
+        
+            <div class="slds-col stat-box closed">
+                <p class="label">Closed</p>
+                <p class="value">{closed}</p>
+            </div>
+        
+            <div class="slds-col stat-box pending">
+                <p class="label">Pending</p>
+                <p class="value">{pending}</p>
+            </div>
+        
+        </div>
+
+        <!-- Button -->
+        <div class="slds-p-around_medium">
+            <lightning-button 
+                label="New Service Request" 
+                variant="brand"
+                onclick={createRecord}>
+            </lightning-button>
+        </div>
+
+        <!-- Datatable -->
+        <lightning-datatable
+            key-field="Id"
+            data={data}
+            columns={columns}>
+        </lightning-datatable>
+
+    </lightning-card>
+</template>
