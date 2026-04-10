@@ -3,7 +3,7 @@ public with sharing class debugCheck {
 
         String name='Doly';
         System.debug('hELLO..' +msg +name);
-        System.debug('hELLO.. Dolyyyyyy....' );
+        // System.debug('hELLO.. Dolyyyyyy....' );
 
     }
 }
